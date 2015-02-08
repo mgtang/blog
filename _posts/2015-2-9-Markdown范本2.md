@@ -33,10 +33,6 @@ Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以�
 @requires_authorization
 class SomeClass:
     pass
-
-if __name__ == '__main__':
-    # A comment
-    print 'hello world'
 ```
 
 ### 高效绘制 [流程图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7)
@@ -47,9 +43,6 @@ op=>operation: Your Operation
 cond=>condition: Yes or No?
 e=>end
 
-st->op->cond
-cond(yes)->e
-cond(no)->op
 ```
 
 ### 高效绘制 [序列图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8)
@@ -126,12 +119,6 @@ Bob-->Alice: I am good thanks!
 
 在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 (Ctrl+Alt+P) 发布这份文档给好友吧！
 
-------
-
-再一次感谢您花费时间阅读这份欢迎稿，点击 (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！
-
-作者 [@ghosert][3]     
-2014 年 07月 07日    
 
 
 
