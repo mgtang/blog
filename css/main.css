@@ -181,6 +181,8 @@ p img {margin: 0em -2em;
 }
 
 #pagetitle h2 {
+  text-shadow: 2px 2px 2px #999;
+  color: #C24A4A;
   font-size: 19px;
 }
 
@@ -231,21 +233,21 @@ p img {margin: 0em -2em;
 }
 
 .post h1 {
-  font-size: 140%;
+  font-size: 120%;
+  color: #9C9583;
   margin-bottom: 0.66em;
 }
 
 .post h2 {
-  font-size: 120%;
-  color: #9C9583;
-  margin-bottom: 0.6em;
+  font-size: 115%;
+    margin-bottom: 0.6em;
 }
 .post h3 {
-  font-size: 115%;
+  font-size: 110%;
   margin-bottom: 0.8em;
 }
 .post h4 {
-  font-size: 110%;
+  font-size: 105%;
   margin-bottom: 0.9em;
 }
 .post h5 {
