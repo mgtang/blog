@@ -18,7 +18,7 @@ comments: true
 >  撰写发布技术文稿（代码支持）
 >  撰写发布学术论文（LaTeX 公式支持）
 
-请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> **新文稿** 或者使用快捷键 `Ctrl+Alt+N`。
+请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的  **新文稿** 或者使用快捷键 `Ctrl+Alt+N`。
 
 ------
 
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     print 'hello world'
 ```
 
-### 高效绘制 [流程图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图)
+### 高效绘制 [流程图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7)
 
 ```flow
 st=>start: Start
@@ -52,7 +52,7 @@ cond(yes)->e
 cond(no)->op
 ```
 
-### 高效绘制 [序列图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-序列图)
+### 高效绘制 [序列图](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8)
 
 ```seq
 Alice->Bob: Hello Bob, how are you?
@@ -100,14 +100,6 @@ Bob-->Alice: I am good thanks!
 
 ![tool-manager](https://www.zybuluo.com/static/img/toolbar-manager.jpg)
 
-通过管理工具栏可以：
-
-<i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享
-<i class="icon-file"></i> 新建：开始撰写一篇新的文稿
-<i class="icon-trash"></i> 删除：删除当前的文稿
-<i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地
-<i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作
-<i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式
 
 ### 7. 阅读工具栏
 
@@ -115,17 +107,10 @@ Bob-->Alice: I am good thanks!
 
 通过 **预览区** 右上角的 **阅读工具栏**，可以查看当前文稿的目录并增强阅读体验。
 
-工具栏上的五个图标依次为：
-
-<i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落
-<i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置
-<i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 **黑色主题**，超炫！
-<i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验
-<i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境
 
 ### 8. 阅读模式
 
-在 **阅读工具栏** 点击 <i class="icon-desktop"></i> 或者按下 `Ctrl+Alt+M` 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。
+在 **阅读工具栏** 点击    或者按下 `Ctrl+Alt+M` 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。
 
 ### 9. 标签、分类和搜索
 
@@ -139,11 +124,11 @@ Bob-->Alice: I am good thanks!
 
 ### 10. 文稿发布和分享
 
-在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！
+在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 (Ctrl+Alt+P) 发布这份文档给好友吧！
 
 ------
 
-再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！
+再一次感谢您花费时间阅读这份欢迎稿，点击 (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！
 
 作者 [@ghosert][3]     
 2014 年 07月 07日    
