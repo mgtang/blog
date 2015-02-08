@@ -1,0 +1,10 @@
+---
+layout: post
+title: "跑狗图"
+date: 2014-02-6 21:48
+comments: true
+categories: Octopress
+---
+
+![跑狗图](http://tk.tk180.com:16880/caitu/hm40.jpg)
+![创富图](http://tk.tk180.com:16880/caitu/hm39.jpg)

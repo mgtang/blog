@@ -1,0 +1,6 @@
+name: "麦谷糖"
+description: "Tanky Woo's Blog, focus on Python, Linux, Gentoo, Mac OS, Vim, Open Source and so on."
+url: "http://blog.fjvi.xyz"
+markdown: redcarpet
+highlighter: pygments
+exclude: ["fabfile.py*", "*.bak"]
