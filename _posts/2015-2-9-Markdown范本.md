@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "《Nagios系统监控实践》简评+笔记"
-date: 2014-03-26 13:42
+title: "Markdown范本"
+date: 2010-03-26 13:42
 comments: true
 categories: Nagios
 ---
