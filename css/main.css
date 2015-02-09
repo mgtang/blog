@@ -89,7 +89,7 @@ hr {
 .site {
   font-size: 115%;
   text-align: left;
-  width: 50em;
+  width: 45em;
   margin: 0 auto;
   line-height: 1.5em;
   padding: 2em 2em 2em 2em;
@@ -120,8 +120,7 @@ hr {
 }
 
 .header a.extra {
-  color: #CF0000;
-  margin-left: 1em;
+  margin-right: 0em;
   font-size: 13px;
 }
 
@@ -161,8 +160,7 @@ hr {
   border: 0;
 }
 
-p img {margin: 1em -2em;
-  width: 108%;
+p img {margin: 1em -2em;!important;
   box-shadow: 1px 2px 5px #666;
 }
 
@@ -183,8 +181,8 @@ p img {margin: 1em -2em;
 
 #pagetitle h2 {
   text-shadow: 1px 1px 1px #999;
-  color: #524AC2;
-  font-size: 19px;
+  color: #1863A1;
+  font-size: 20px;
 }
 
 /* standard */
