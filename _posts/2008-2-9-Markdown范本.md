@@ -7,7 +7,7 @@ comments: true
 
 <!-- more -->
 
-<h5 href="https://raw.githubusercontent.com/mgtang/blog/gh-pages/_posts/2008-2-9-Markdown%E8%8C%83%E6%9C%AC.md" target="_blank">【本文Markdown源码】</h5>  <h5 href="https://github.com/mgtang/blog/new/gh-pages/_posts" target="_blank">【写文章】</h5>
+<a href="https://raw.githubusercontent.com/mgtang/blog/gh-pages/_posts/2008-2-9-Markdown%E8%8C%83%E6%9C%AC.md" target="_blank">【本文Markdown源码】</a>  <a href="https://github.com/mgtang/blog/new/gh-pages/_posts" target="_blank">【写文章】</a>
 
 ---
 
