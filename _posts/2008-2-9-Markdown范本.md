@@ -7,14 +7,11 @@ comments: true
 
 <!-- more -->
 
-[『本文Markdown源码』](https://raw.githubusercontent.com/mgtang/blog/gh-pages/_posts/2008-2-9-Markdown%E8%8C%83%E6%9C%AC.md")
-[『Cmd 技术渲染的沙箱页面，点击此处编写自己的文档』](https://www.zybuluo.com/mdeditor "作业部落旗下 Cmd 在线 Markdown 编辑阅读器")
+[『本文Markdown源码』](https://raw.githubusercontent.com/mgtang/blog/gh-pages/_posts/2008-2-9-Markdown%E8%8C%83%E6%9C%AC.md target="_blank")
 ---
 # Cmd Markdown 简明语法手册
 
 ### 1. 斜体和粗体
-
-使用 * 和 ** 表示斜体和粗体。
 
 示例：
 
@@ -34,13 +31,15 @@ comments: true
 ### 这是一个三级标题
 ```
 
-你也可以选择在行首加井号表示不同级别的标题 (H1-H6)，例如：# H1, ## H2, ### H3，#### H4。
+你也可以选择在行首加井号表示不同级别的标题 (H1-H6)，例如：
+    # H1, ## H2, ### H3，#### H4。
 
 ### 3. 外链接
 
 示例：
 
  [本人博客](http://ghosertblog.github.com) 的链接。
+ [『点击此处编写自己的文档』](https://www.zybuluo.com/mdeditor "作业部落旗下 Cmd 在线 Markdown 编辑阅读器")
  
 ### 4.  插入图像
 
