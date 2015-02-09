@@ -210,8 +210,7 @@ p img {margin: 1em -2em;
 .post code {
   padding: 0 .2em;
   font-size: 90%;
-  color: #FFF;
-  background-color: #497883;
+  border: 1px solid #ddd;
   white-space: nowrap;
 }
 
