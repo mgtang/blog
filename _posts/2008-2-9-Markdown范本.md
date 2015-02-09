@@ -7,8 +7,7 @@ comments: true
 
 <!-- more -->
 
-<a href="https://raw.githubusercontent.com/mgtang/blog/gh-pages/_posts/2008-2-9-Markdown%E8%8C%83%E6%9C%AC.md" target="_blank">『本文Markdown源码』</a>  <a href="https://github.com/mgtang/blog/new/gh-pages/_posts" target="_blank">『写文章』</a>
-
+<a href="https://raw.githubusercontent.com/mgtang/blog/gh-pages/_posts/2008-2-9-Markdown%E8%8C%83%E6%9C%AC.md" target="_blank">【本文Markdown源码】</a>  <a href="https://github.com/mgtang/blog/new/gh-pages/_posts" target="_blank">【写文章】</a>
 ---
 
 # Cmd Markdown 简明语法手册
@@ -47,7 +46,7 @@ comments: true
 
 `示例：`
 
-![我的头像](https://www.zybuluo.com/static/img/my_head.jpg)
+![我的头像](https://raw.githubusercontent.com/mgtang/img/gh-pages/IMG_1157.JPG)
 
 ### 5. 无序列表
 
