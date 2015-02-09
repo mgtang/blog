@@ -46,15 +46,16 @@ blockquote p {
   margin: 0;
 }
 
-.back-to .back-top {
-background: url("http://www.ccvita.com/usr/themes/ccvita/images/back-top.png") no-repeat scroll 0 0 transparent;
-display: block;
-float: right;
-height: 50px;
-margin-left: 10px;
-outline: 0 none;
-text-indent: -9999em;
-width: 50px;
+#toTop {
+width:50px;
+height:50px;
+background:#fff url(http://img01.taobaocdn.com/imgextra/i1/45631983/T26im4XkJaXXXXXXXX_!!45631983.gif);
+position:fixed;
+left: 50%;
+margin-left: 510px;
+bottom:50px;
+cursor:pointer;
+display:none;
 }
 
 /* Gradient transparent - color - transparent
