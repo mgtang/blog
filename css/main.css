@@ -208,11 +208,12 @@ p img {margin: 1em -2em;
 }
 
 .post code {
-  padding: 0 .2em;
-  font-size: 90%;
-  color: #FFF;
-  border: 1px solid #ddd;
-  border-radius: 3px;
+  padding: .2em .2em;
+  font-size: 85%;
+  color: #497883;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #F5F5F5;
   white-space: nowrap;
 }
 
