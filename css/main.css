@@ -166,8 +166,8 @@ img {
 max-width: 104.5%;
 }
 p img {margin: 1em -2em;
-  box-shadow: 1px 1px 5px #888
-  border-radius: 0 10px 10px 0;
+  box-shadow: 1px 1px 4px #888;
+  border-radius: 0 8px 8px 0;
 }
 
 #home .posts li a {
