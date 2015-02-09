@@ -7,19 +7,21 @@ comments: true
 
 <!-- more -->
 
-[『本文Markdown源码』](https://raw.githubusercontent.com/mgtang/blog/gh-pages/_posts/2008-2-9-Markdown%E8%8C%83%E6%9C%AC.md target="_blank")
+<a href="https://raw.githubusercontent.com/mgtang/blog/gh-pages/_posts/2008-2-9-Markdown%E8%8C%83%E6%9C%AC.md" target="_blank">『本文Markdown源码』</a>  <a href="https://github.com/mgtang/blog/new/gh-pages/_posts" target="_blank">『写文章』</a>
+
 ---
+
 # Cmd Markdown 简明语法手册
 
 ### 1. 斜体和粗体
 
-示例：
+`示例：`
 
 这是 *斜体*，这是 **粗体**。
 
 ### 2. 分级标题
 
-示例：
+`示例：`
 
 ```
 这是一个一级标题
@@ -36,14 +38,14 @@ comments: true
 
 ### 3. 外链接
 
-示例：
+`示例：`
 
  [本人博客](http://ghosertblog.github.com) 的链接。
  [『点击此处编写自己的文档』](https://www.zybuluo.com/mdeditor "作业部落旗下 Cmd 在线 Markdown 编辑阅读器")
  
 ### 4.  插入图像
 
-示例：
+`示例：`
 
 ![我的头像](https://www.zybuluo.com/static/img/my_head.jpg)
 
@@ -51,7 +53,7 @@ comments: true
 
 使用 *，+，- 表示无序列表。
 
-示例：
+`示例：`
 
 * 无序列表项 一
 + 无序列表项 二
@@ -59,7 +61,7 @@ comments: true
 
 ### 6. 有序列表
 
-示例：
+`示例：`
 
 1. 有序列表项 一
 2. 有序列表项 二
@@ -67,18 +69,18 @@ comments: true
 
 ### 7. 文字引用
 
-示例：
+`示例：`
 
 > 野火烧不尽，春风吹又生。
 
 ### 8. 行内代码块
 
-示例：
+`示例：`
 
  `行内代码块`。
 
 ### 9.  代码块
 
-示例：
+`示例：`
 
     这是一个代码块，此行左侧有四个不可见的空格。
