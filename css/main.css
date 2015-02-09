@@ -13,7 +13,7 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #ddd  url('/img/gh-pages/noise.png') top left;
+  background-color: #aaa;
   font: 13.9px Helvetica, Arial, sans-serif;
   text-align: center;
 }
@@ -98,7 +98,7 @@ hr {
   background-color: #FFF;
 }
 .header {
-  border-bottom: 4px solid #ddd;
+  border-bottom: 4px solid #aaa;
 }
 .header a {
   font-weight: bold;
@@ -137,7 +137,7 @@ hr {
 .footer {
   font-size: 80%;
   color: #666;
-  border-top: 4px solid #ddd;
+  border-top: 4px solid #aaa;
   line-height: 3em;
   margin-top: 2em;
   overflow: hidden;
