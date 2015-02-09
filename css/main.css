@@ -46,6 +46,17 @@ blockquote p {
   margin: 0;
 }
 
+.back-to .back-top {
+background: url("images/back-top.png") no-repeat scroll 0 0 transparent;
+display: block;
+float: right;
+height: 50px;
+margin-left: 10px;
+outline: 0 none;
+text-indent: -9999em;
+width: 50px;
+}
+
 /* Gradient transparent - color - transparent
 http://css-tricks.com/examples/hrs/
 */
