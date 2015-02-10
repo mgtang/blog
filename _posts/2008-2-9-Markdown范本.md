@@ -47,7 +47,7 @@ comments: true
 
 `示例：`
 
-![我的头像](https://raw.githubusercontent.com/mgtang/img/gh-pages/IMG_1157.JPG)
+![图片实例](/img/IMG_1157.JPG)
 
 ### 5. 无序列表
 
