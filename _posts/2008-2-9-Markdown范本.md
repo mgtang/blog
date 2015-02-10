@@ -47,7 +47,7 @@ comments: true
 
 `示例：`
 
-![图片实例](/img/IMG_1157.JPG)
+![图片实例](http://fjvi.xyz/img/IMG_1157.JPG)
 
 ### 5. 无序列表
 
