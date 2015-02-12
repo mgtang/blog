@@ -64,18 +64,18 @@ headroom是用纯Javascript写的插件，用来隐藏和展示页面元素，�
 1. js的引用顺序错误，因为一些js要用到其他js才能运行的，所以必须放在其他的js之后。例如
 
 >   <script type="text/javascript">
-            $(".navbar-fixed-top").headroom();   
-    </script>
+>            $(".navbar-fixed-top").headroom();   
+>    </script>
     
 必须放在headroom.js和jQuery.headroom.js之后，而headroom.js和jQuery.headroom.js必须放在jQuery.js之后。
 
 2. 将$(".navbar-fixed-top").headroom(); 放在主体html代码之前，如放在<head></head>中，因为在主体html代码之前，navbar元素还没加载就调用了headroom()，所以无效。应该用以下代码替换之，表示等文档加载完毕再调用。
 
 >  <script type="text/javascript">
-     $("doucument").ready(fuction(){
-     $(".navbar-fixed-top").headroom(); 
-     });  
-   </script>
+>     $("doucument").ready(fuction(){
+>     $(".navbar-fixed-top").headroom(); 
+>     });  
+>   </script>
 
 上述的效果只是通过css自带的trasition属性来实现效果，比较单调。不过可以结合animate.css实现更多的漂亮的消失和出现的效果。（查看效果）
 
