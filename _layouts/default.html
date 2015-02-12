@@ -27,6 +27,7 @@
         <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>  
     <![endif]-->  
     <style type="text/css">  
+        .navbar-nav>li>.dropdown-menu{  text-align: left;}
         .headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}  
         .headroom--unpinned {top: -100px;}  
         .headroom--pinned {top: 0;}  
@@ -65,14 +66,7 @@
         </nav>  
 
          <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="http://www.fjvi.xyz/">HOME</a>
-            <a class="extra" href="http://wiki.fjvi.xyz/">WIKI</a>
-            <a class="extra" href="https://github.com/mgtang">GITHUB</a>
-            <a class="extra" href="/about.html">ABOUT</a>
-            <a class="extra" href="/feed.xml">RSS</a>
-          </div>
+ 
           {{ content }}
 
           <div class="footer">
