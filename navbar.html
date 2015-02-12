@@ -58,7 +58,7 @@ background-repeat:no-repeat; background-position:left center;}
 #dock ul li.header, #dock ul li .header:hover {background:#D3DAED url(header_bkg.png) repeat-x;border: solid 1px #F1F1F1;}
 
 #dock > li:hover ul {display:block;}
-#dock > li ul {position:absolute; top:0px; left:-260px; z-index:-1;width:260px; display:none;
+#dock > li ul {position:absolute; top:0px; left:-250px; z-index:-1;width:250px; display:none;
 background-color:#F1F1F1; border:solid 1px #f0f0f0; padding:0px; margin:0px; list-style:none;}
 #dock > li ul.docked { display:block;z-index:-2;overflow:hidden}
 
@@ -95,7 +95,7 @@ background-color:#F1F1F1; border:solid 1px #f0f0f0; padding:0px; margin:0px; lis
 
         $("#dock .undock").click(function () {
             $(this).parent().parent().addClass("free").removeClass("docked")
-.animate({ left: "-260px" }, 200).height($(window).height()).css("top", "0px");
+.animate({ left: "-250px" }, 200).height($(window).height()).css("top", "0px");
 
             docked = docked - 1;
             var dockH = ($(window).height()) / docked
@@ -117,7 +117,7 @@ background-color:#F1F1F1; border:solid 1px #f0f0f0; padding:0px; margin:0px; lis
         $("#dock li").hover(function () {
             $(this).find("ul").animate({ left: "25px" }, 200);
         }, function () {
-            $(this).find("ul.free").animate({ left: "-260px" }, 200);
+            $(this).find("ul.free").animate({ left: "-250px" }, 200);
         });
     }); 
 </script>
