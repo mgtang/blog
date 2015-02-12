@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="JS代码,侧边菜单,拉出菜单,高级菜单,导航菜单,jquery菜单" />
-<meta name="description" content="jQuery高级可停靠侧边栏，jquery实现的高级侧边导航菜单效果，更多侧边菜单,拉出菜单,高级菜单,导航菜单,jquery菜单请访问柯乐义JS代码频道。" />
-<title>jQuery高级可停靠侧边栏_柯乐义</title>
 <link type="text/css" rel="Stylesheet" href="http://keleyi.com/keleyi/phtml/jqmenu/2/keleyidock.css" />
 <script type="text/javascript" src="http://keleyi.com/keleyi/pmedia/jquery/jquery-1.10.2.min.js"></script>
 <script type="text/javascript">
@@ -62,14 +56,14 @@ $(this).find("ul.free").animate({ left: "-180px" }, 200);
 }); 
 </script>
 </head>
-<body>
+<div>
 <ul id="dock">
 <li id="links">
 <ul class="free">
 <li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>链接</li>
-<li><a href="http://keleyi.com/menu/cms/" >CMS</a></li><li><a href="http://keleyi.com/menu/net/" >.NET</a></li><li><a href="http://keleyi.com/menu/javascript/" >Javascript</a></li><li><a href="http://keleyi.com/menu/jquery/" >jQuery</a></li><li><a href="http://keleyi.com/menu/csharp/" >C#</a></li><li><a href="http://keleyi.com/menu/aspnet/" >ASP.NET</a></li><li><a href="http://keleyi.com/menu/mvc/" >MVC</a></li><li><a href="http://keleyi.com/menu/html5/" >HTML5</a></li>
-<li><a href="http://keleyi.com/menu/webqd/" >web前端</a></li><li><a href="http://keleyi.com/menu/sqlserver/" >SQL Server</a></li><li><a href="http://keleyi.com/menu/cpp/" >C++</a></li><li><a href="http://keleyi.com/menu/hbyy/" >汇编语言</a></li><li><a href="http://keleyi.com/menu/flhz/" >分类汇总</a></li><li><a href="http://keleyi.com/menu/other/" >其他</a></li><li><a href="http://keleyi.com/list/">最新文章</a></li><li><a href="http://keleyi.com/ziliao/js/zzbds.htm">JS正则表达式</a></li>
-</ul>
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}</ul>
 </li>
 <li id="files">
 <ul class="free">
@@ -95,5 +89,4 @@ $(this).find("ul.free").animate({ left: "-180px" }, 200);
 </li>
 </ul>
 
-</body>
-</html>
+</div>
