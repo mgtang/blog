@@ -6,7 +6,7 @@ comments: true
 ---
 
 1. ##什么是headroom.js？
-headroom是用纯Javascript写的插件，用来隐藏和展示页面元素，从而为页面留下更多空间。比如使用headroom能使导航栏当页面下滚时消失，当页面上滚时候又出现。（查看效果）
+headroom是用纯Javascript写的插件，用来隐藏和展示页面元素，从而为页面留下更多空间。比如使用headroom能使导航栏当页面下滚时消失，当页面上滚时候又出现。[（查看效果）](http://www.bootcss.com/p/headroom.js/)
 
 2. ##工作原理
 通过感应目标元素不同的3种状态（原始，下滚，上滚），为目标元素更改相应的class，通过相应的class的css样式的变化得到所要的效果。
@@ -80,9 +80,9 @@ headroom是用纯Javascript写的插件，用来隐藏和展示页面元素，�
      </script>
 ````
 
-上述的效果只是通过css自带的trasition属性来实现效果，比较单调。不过可以结合animate.css实现更多的漂亮的消失和出现的效果。（查看效果）
+上述的效果只是通过css自带的trasition属性来实现效果，比较单调。不过可以结合animate.css实现更多的漂亮的消失和出现的效果。[（查看效果）](http://www.bootcss.com/p/headroom.js/playroom/)
 
-animate.css使用纯css为各种元素实现不同的动画效果，每一种class对应一种动画效果，所以将animate.css引入代码后headroom()可以直接使用已经写好的class。（animate.css下载）
+animate.css使用纯css为各种元素实现不同的动画效果，每一种class对应一种动画效果，所以将animate.css引入代码后headroom()可以直接使用已经写好的class。[（animate.css下载）](http://daneden.github.io/animate.css/)
 
 我基于bootstrap和jquery写得例子。
 
