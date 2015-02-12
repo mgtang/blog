@@ -25,7 +25,7 @@ var docked = 0;
 $("#dock li ul").height($(window).height());
 
 $("#dock .dock-keleyi-com").click(function () {
-$(this).parent().parent().addClass("docked").removeClass("free");
+$(this).parent().parent().addClass("docked").removeClass("posts");
 
 docked += 1;
 var dockH = ($(window).height()) / docked
@@ -45,7 +45,7 @@ $("#content").css("margin-left", "60px");
 });
 
 $("#dock .undock").click(function () {
-$(this).parent().parent().addClass("free").removeClass("docked")
+$(this).parent().parent().addClass("posts").removeClass("docked")
 .animate({ left: "-180px" }, 200).height($(window).height()).css("top", "0px");
 
 docked = docked - 1;
@@ -68,7 +68,7 @@ $("#content").css("margin-left", "60px");
 $("#dock li").hover(function () {
 $(this).find("ul").animate({ left: "40px" }, 200);
 }, function () {
-$(this).find("ul.free").animate({ left: "-180px" }, 200);
+$(this).find("ul.posts").animate({ left: "-180px" }, 200);
 });
 }); 
 </script>
@@ -76,12 +76,14 @@ $(this).find("ul.free").animate({ left: "-180px" }, 200);
     <body>
     <ul id="dock">
 <li id="links">
-<ul class="free">
-{{ content }}
+<ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
 </ul>
 </li>
 <li id="files">
-<ul class="free">
+<ul class="posts">
 <li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
 <li><a href="http://keleyi.com/game/1/">HTML5捕鱼游戏</a></li>
 <li><a href="http://keleyi.com/game/2/">不上不下</a></li>
@@ -91,7 +93,7 @@ $(this).find("ul.free").animate({ left: "-180px" }, 200);
 </ul>
 </li>
 <li id="tools">
-<ul class="free">
+<ul class="posts">
 <li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>工具</li>
 <li><a href="http://keleyi.com/tool/md5.htm">MD5加密</a></li>
 <li><a href="http://keleyi.com/tool/htmlencode.htm" target="_blank">HTML编码与解码</a></li>
