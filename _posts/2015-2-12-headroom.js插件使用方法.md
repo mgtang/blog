@@ -5,21 +5,24 @@ date: 2015-2-12 23:09:04
 comments: true
 ---
 
-1.什么是headroom.js？
+1. 什么是headroom.js？
 headroom是用纯Javascript写的插件，用来隐藏和展示页面元素，从而为页面留下更多空间。比如使用headroom能使导航栏当页面下滚时消失，当页面上滚时候又出现。（查看效果）
 
-2.工作原理
+2. 工作原理
 通过感应目标元素不同的3种状态（原始，下滚，上滚），为目标元素更改相应的class，通过相应的class的css样式的变化得到所要的效果。
 
-3.如何使用
+3. 如何使用
 （以下的例子是基于bootstrap框架和jquery插件的，在bootstrap框架下可以快速写出导航栏navbar，然后以jquery插件方式对导航栏navbar调用headroom()。）
 
 首先需要引用headroom.js和jQuery.headroom.js。将以下的代码加入到你的代码中。headroom.js作用：感应元素不同的状态为之更改相应的class。jQuery.headroom.js作用：提供jquery插件方式和Data-API方式调用headrooom()。
 
-   <script  type="text/javascript"  src="https://rawgithub.com/WickyNilliams/headroom.js/master/dist/headroom.js"></script>  
-   <script  type="text/javascript"  src="https://rawgithub.com/WickyNilliams/headroom.js/master/src/jQuery.headroom.js"></script>  
+````
+<script  type="text/javascript"  src="https://rawgithub.com/WickyNilliams/headroom.js/master/dist/headroom.js"></script>  
+<script  type="text/javascript"  src="https://rawgithub.com/WickyNilliams/headroom.js/master/src/jQuery.headroom.js"></script>  
+````
 
 因为headroom()函数传入的参数option对象的默认值如下。
+
 ````
 {  
     // 在元素没有固定之前，垂直方向的偏移量（以px为单位）  
@@ -38,6 +41,7 @@ headroom是用纯Javascript写的插件，用来隐藏和展示页面元素，�
 }  
 ````
 由此可知原始的状态对应的class是headroom，下滚时的class是headroom--pinned，上滚时的class是headroom--unpinned。所以我们要添加下面的样式，通过css的trasition属性达到变换效果。
+
 ````
 <style type="text/css">  
     .headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}  
@@ -56,31 +60,24 @@ headroom是用纯Javascript写的插件，用来隐藏和展示页面元素，�
 
 做完了上述步骤，理论上你就可以看到headroom的效果了，如果没有成功可能是以下的原因：
 
-````
-js的引用顺序错误，因为一些js要用到其他js才能运行的，所以必须放在其他的js之后。例如
-    <script type="text/javascript">
+1. js的引用顺序错误，因为一些js要用到其他js才能运行的，所以必须放在其他的js之后。例如
+> <script type="text/javascript">
             $(".navbar-fixed-top").headroom();   
     </script>
 必须放在headroom.js和jQuery.headroom.js之后，而headroom.js和jQuery.headroom.js必须放在jQuery.js之后。
 
-将$(".navbar-fixed-top").headroom(); 放在主体html代码之前，如放在<head></head>中，因为在主体html代码之前，navbar元素还没加载就调用了headroom()，所以无效。应该用以下代码替换之，表示等文档加载完毕再调用。
-    <script type="text/javascript">
+2. 将$(".navbar-fixed-top").headroom(); 放在主体html代码之前，如放在<head></head>中，因为在主体html代码之前，navbar元素还没加载就调用了headroom()，所以无效。应该用以下代码替换之，表示等文档加载完毕再调用。
+>   <script type="text/javascript">
       	$("doucument").ready(fuction(){
      		 $(".navbar-fixed-top").headroom(); 
        	 });  
     </script>
-````
 
 上述的效果只是通过css自带的trasition属性来实现效果，比较单调。不过可以结合animate.css实现更多的漂亮的消失和出现的效果。（查看效果）
 
 animate.css使用纯css为各种元素实现不同的动画效果，每一种class对应一种动画效果，所以将animate.css引入代码后headroom()可以直接使用已经写好的class。（animate.css下载）
 
-
-
-
-
 我基于bootstrap和jquery写得例子。
-
 
 ````
 <!DOCTYPE html>  
