@@ -3,40 +3,6 @@
 <meta name="viewport" content="width=device-width">
 <link type="text/css" rel="Stylesheet" href="/img/Code/keleyidock.css" />
 <script type="text/javascript" src="/img/Code/jquery-1.10.2.min.js"></script>
-</head>
-<div>
-<ul id="dock">
-<li id="links">
-<ul class="free">
-<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>链接</li>
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}</ul>
-</li>
-<li id="files">
-<ul class="free">
-<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
-<li><a href="http://keleyi.com/game/1/">HTML5捕鱼游戏</a></li>
-<li><a href="http://keleyi.com/game/2/">不上不下</a></li>
-<li><a href="http://keleyi.com/game/3/">打地鼠</a></li>
-<li><a href="http://keleyi.com/keleyi/phtml/silverlight/">猜数字</a></li>
-<li></li>
-</ul>
-</li>
-<li id="tools">
-<ul class="free">
-<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>工具</li>
-<li><a href="http://keleyi.com/tool/md5.htm">MD5加密</a></li>
-<li><a href="http://keleyi.com/tool/htmlencode.htm" target="_blank">HTML编码与解码</a></li>
-<li><a href="http://keleyi.com/tool/urldecode.htm" target="_blank">URL编码与解码</a></li>
-<li><a href="http://keleyi.com/tool/regex.htm" target="_blank">.NET正则表达式匹配工具</a></li>
-<li><a href="http://keleyi.com/ziliao/googlejavascriptstyle.htm">JavaScript代码风格指南</a></li>
-<li><a href="http://keleyi.com/ziliao/unicode/">Unicode字符列表</a></li>
-<li><a href="http://keleyi.com/tool/color.htm" target="_blank" title="颜色选择器"><img src="http://keleyi.com/tool/color/colormap_80.gif" alt="颜色选择器" /></a></li>
-</ul>
-</li>
-</ul>
-</div>
 <script type="text/javascript">
 $(document).ready(function () {
 var docked = 0;
@@ -91,3 +57,38 @@ $(this).find("ul.free").animate({ left: "-180px" }, 200);
 });
 }); 
 </script>
+</head>
+<div>
+<ul id="dock">
+<li id="links">
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>链接</li>
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}</ul>
+</li>
+<li id="files">
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
+<li><a href="http://keleyi.com/game/1/">HTML5捕鱼游戏</a></li>
+<li><a href="http://keleyi.com/game/2/">不上不下</a></li>
+<li><a href="http://keleyi.com/game/3/">打地鼠</a></li>
+<li><a href="http://keleyi.com/keleyi/phtml/silverlight/">猜数字</a></li>
+<li></li>
+</ul>
+</li>
+<li id="tools">
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>工具</li>
+<li><a href="http://keleyi.com/tool/md5.htm">MD5加密</a></li>
+<li><a href="http://keleyi.com/tool/htmlencode.htm" target="_blank">HTML编码与解码</a></li>
+<li><a href="http://keleyi.com/tool/urldecode.htm" target="_blank">URL编码与解码</a></li>
+<li><a href="http://keleyi.com/tool/regex.htm" target="_blank">.NET正则表达式匹配工具</a></li>
+<li><a href="http://keleyi.com/ziliao/googlejavascriptstyle.htm">JavaScript代码风格指南</a></li>
+<li><a href="http://keleyi.com/ziliao/unicode/">Unicode字符列表</a></li>
+<li><a href="http://keleyi.com/tool/color.htm" target="_blank" title="颜色选择器"><img src="http://keleyi.com/tool/color/colormap_80.gif" alt="颜色选择器" /></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
