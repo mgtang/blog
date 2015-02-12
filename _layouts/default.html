@@ -76,6 +76,7 @@ $(this).find("ul.free").animate({ left: "-180px" }, 200);
 <ul id="dock">
 <li id="links">
 <ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>链接</li>
     {% for post in site.posts %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
