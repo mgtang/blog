@@ -14,25 +14,93 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+        
+<link type="text/css" rel="Stylesheet" href="http://keleyi.com/keleyi/phtml/jqmenu/2/keleyidock.css" />
+<script type="text/javascript" src="http://keleyi.com/keleyi/pmedia/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+var docked = 0;
 
-    <style type="text/css">  
-        .navbar-nav>li>.dropdown-menu{  text-align: left;}
-        .headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}  
-        .headroom--unpinned {top: -100px;}  
-        .headroom--pinned {top: 0;}  
-    </style>  
+$("#dock li ul").height($(window).height());
 
-    <style type="text/css">  
-      .scrollspy-example {  
-        height: 1200px;  
-        overflow: auto;  
-        position: relative;  
-      }  
-    </style> 
+$("#dock .dock-keleyi-com").click(function () {
+$(this).parent().parent().addClass("docked").removeClass("free");
+
+docked += 1;
+var dockH = ($(window).height()) / docked
+var dockT = 0;
+
+$("#dock li ul.docked").each(function () {
+$(this).height(dockH).css("top", dockT + "px");
+dockT += dockH;
+});
+$(this).parent().find(".undock").show();
+$(this).hide();
+
+if (docked > 0)
+$("#content").css("margin-left", "250px");
+else
+$("#content").css("margin-left", "60px");
+});
+
+$("#dock .undock").click(function () {
+$(this).parent().parent().addClass("free").removeClass("docked")
+.animate({ left: "-180px" }, 200).height($(window).height()).css("top", "0px");
+
+docked = docked - 1;
+var dockH = ($(window).height()) / docked
+var dockT = 0;
+
+$("#dock li ul.docked").each(function () {
+$(this).height(dockH).css("top", dockT + "px");
+dockT += dockH;
+});
+$(this).parent().find(".dock-keleyi-com").show();
+$(this).hide();
+
+if (docked > 0)
+$("#content").css("margin-left", "250px");
+else
+$("#content").css("margin-left", "60px");
+});
+
+$("#dock li").hover(function () {
+$(this).find("ul").animate({ left: "40px" }, 200);
+}, function () {
+$(this).find("ul.free").animate({ left: "-180px" }, 200);
+});
+}); 
+</script> 
     </head>
     
    <body>
            <!-- 导航栏 -->  
+<ul id="dock">
+<li id="links"><span>导航</span>
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>链接</li>
+<li><a href="http://keleyi.com/menu/cms/" >CMS</a></li><li><a href="http://keleyi.com/menu/net/" >.NET</a></li><li><a href="http://keleyi.com/menu/javascript/" >Javascript</a></li><li><a href="http://keleyi.com/menu/jquery/" >jQuery</a></li><li><a href="http://keleyi.com/menu/csharp/" >C#</a></li><li><a href="http://keleyi.com/menu/aspnet/" >ASP.NET</a></li><li><a href="http://keleyi.com/menu/mvc/" >MVC</a></li><li><a href="http://keleyi.com/menu/html5/" >HTML5</a></li>
+<li><a href="http://keleyi.com/menu/webqd/" >web前端</a></li><li><a href="http://keleyi.com/menu/sqlserver/" >SQL Server</a></li><li><a href="http://keleyi.com/menu/cpp/" >C++</a></li><li><a href="http://keleyi.com/menu/hbyy/" >汇编语言</a></li><li><a href="http://keleyi.com/menu/flhz/" >分类汇总</a></li><li><a href="http://keleyi.com/menu/other/" >其他</a></li><li><a href="http://keleyi.com/list/">最新文章</a></li><li><a href="http://keleyi.com/ziliao/js/zzbds.htm">JS正则表达式</a></li>
+</ul>
+</li>
+<li id="files"><span>链接</span>
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
+<li><a href="http://keleyi.com/game/1/">HTML5捕鱼游戏</a></li>
+<li><a href="http://keleyi.com/game/2/">不上不下</a></li>
+<li><a href="http://keleyi.com/game/3/">打地鼠</a></li>
+<li><a href="http://keleyi.com/keleyi/phtml/silverlight/">猜数字</a></li>
+<li></li>
+</ul>
+</li>
+<li id="tools"><span>文章列表</span>
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>工具</li>
+                               {% for post in site.posts %}
+                               <li> <a href="{{ post.url }}">{{ post.title }}</a></li>
+                               {% endfor %} </ul>
+</li>
+</ul>
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="example">  
             <div class="navbar-header">  
               <a class="navbar-brand" href="/">麦谷糖</a>  
@@ -46,9 +114,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">文章<b class="caret"></b></a>  
 
                         <ul class="dropdown-menu">  
-                               {% for post in site.posts %}
-                               <li> <a href="{{ post.url }}">{{ post.title }}</a></li>
-                               {% endfor %} 
+
                         </ul>  
                     </li>  
                 </ul>  
