@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
@@ -74,28 +74,20 @@ $(this).find("ul.free").animate({ left: "-260px" }, 200);
 });
 });
 </script>
-     </head>
+</head>
     
-   <body>
-           <!-- 导航栏 -->  
+<body>
+<!-- 导航栏 -->  
 <ul id="dock">
 <li id="links"><span>导航</span>
 <ul class="free">
 <li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>链接</li>
-<li><a href="http://keleyi.com/menu/cms/" >CMS</a></li><li><a href="http://keleyi.com/menu/net/" >.NET</a></li><li><a href="http://keleyi.com/menu/javascript/" >Javascript</a></li><li><a href="http://keleyi.com/menu/jquery/" >jQuery</a></li><li><a href="http://keleyi.com/menu/csharp/" >C#</a></li><li><a href="http://keleyi.com/menu/aspnet/" >ASP.NET</a></li><li><a href="http://keleyi.com/menu/mvc/" >MVC</a></li><li><a href="http://keleyi.com/menu/html5/" >HTML5</a></li>
-<li><a href="http://keleyi.com/menu/webqd/" >web前端</a></li><li><a href="http://keleyi.com/menu/sqlserver/" >SQL Server</a></li><li><a href="http://keleyi.com/menu/cpp/" >C++</a></li><li><a href="http://keleyi.com/menu/hbyy/" >汇编语言</a></li><li><a href="http://keleyi.com/menu/flhz/" >分类汇总</a></li><li><a href="http://keleyi.com/menu/other/" >其他</a></li><li><a href="http://keleyi.com/list/">最新文章</a></li><li><a href="http://keleyi.com/ziliao/js/zzbds.htm">JS正则表达式</a></li>
+<li><a href="/" >Home</a></li>
+<li><a href="/about.html" >About</a></li>
+<li><a href="http://fjvi.xyz" >收藏夹</a></li>
 </ul>
 </li>
-<li id="files"><span>链接</span>
-<ul class="free">
-<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
-<li><a href="http://keleyi.com/game/1/">HTML5捕鱼游戏</a></li>
-<li><a href="http://keleyi.com/game/2/">不上不下</a></li>
-<li><a href="http://keleyi.com/game/3/">打地鼠</a></li>
-<li><a href="http://keleyi.com/keleyi/phtml/silverlight/">猜数字</a></li>
-<li></li>
-</ul>
-</li>
+<!-- 分割线 -->
 <li id="tools"><span>文章列表</span>
 <ul class="free">
 <li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>工具</li>
@@ -104,7 +96,49 @@ $(this).find("ul.free").animate({ left: "-260px" }, 200);
                                {% endfor %} </ul>
 </li>
 </ul>
-
+<!-- 分割线 -->
+<li id="files"><span>链接</span>
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
+<li><a href="/">名称</a></li>
+</ul>
+</li>
+<!-- 分割线 -->
+<li id="files"><span>链接2</span>
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
+<li><a href="/">名称</a></li>
+</ul>
+</li>
+<!-- 分割线 -->
+<li id="files"><span>链接3</span>
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
+<li><a href="/">名称</a></li>
+</ul>
+</li>
+<!-- 分割线 -->
+<li id="files"><span>链接4</span>
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
+<li><a href="/">名称</a></li>
+</ul>
+</li>
+<!-- 分割线 -->
+<li id="files"><span>链接5</span>
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
+<li><a href="/">名称</a></li>
+</ul>
+</li>
+<!-- 分割线 -->
+<li id="files"><span>链接6</span>
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
+<li><a href="/">名称</a></li>
+</ul>
+</li>
+<!-- 分割线 -->
          <div class="site">
  
           {{ content }}
