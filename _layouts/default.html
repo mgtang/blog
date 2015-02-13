@@ -17,53 +17,7 @@
         
      <link type="text/css" rel="Stylesheet" href="http://fjvi.xyz/img/Code/keleyidock.css" />
      <script type="text/javascript" src="http://fjvi.xyz/img/Code/jquery-1.10.2.min.js"></script>
-     </head>
-    
-   <body>
-           <!-- 导航栏 -->  
-<ul id="dock">
-<li id="links"><span>导航</span>
-<ul class="free">
-<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>链接</li>
-<li><a href="http://keleyi.com/menu/cms/" >CMS</a></li><li><a href="http://keleyi.com/menu/net/" >.NET</a></li><li><a href="http://keleyi.com/menu/javascript/" >Javascript</a></li><li><a href="http://keleyi.com/menu/jquery/" >jQuery</a></li><li><a href="http://keleyi.com/menu/csharp/" >C#</a></li><li><a href="http://keleyi.com/menu/aspnet/" >ASP.NET</a></li><li><a href="http://keleyi.com/menu/mvc/" >MVC</a></li><li><a href="http://keleyi.com/menu/html5/" >HTML5</a></li>
-<li><a href="http://keleyi.com/menu/webqd/" >web前端</a></li><li><a href="http://keleyi.com/menu/sqlserver/" >SQL Server</a></li><li><a href="http://keleyi.com/menu/cpp/" >C++</a></li><li><a href="http://keleyi.com/menu/hbyy/" >汇编语言</a></li><li><a href="http://keleyi.com/menu/flhz/" >分类汇总</a></li><li><a href="http://keleyi.com/menu/other/" >其他</a></li><li><a href="http://keleyi.com/list/">最新文章</a></li><li><a href="http://keleyi.com/ziliao/js/zzbds.htm">JS正则表达式</a></li>
-</ul>
-</li>
-<li id="files"><span>链接</span>
-<ul class="free">
-<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
-<li><a href="http://keleyi.com/game/1/">HTML5捕鱼游戏</a></li>
-<li><a href="http://keleyi.com/game/2/">不上不下</a></li>
-<li><a href="http://keleyi.com/game/3/">打地鼠</a></li>
-<li><a href="http://keleyi.com/keleyi/phtml/silverlight/">猜数字</a></li>
-<li></li>
-</ul>
-</li>
-<li id="tools"><span>文章列表</span>
-<ul class="free">
-<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>工具</li>
-                               {% for post in site.posts %}
-                               <li> <a href="{{ post.url }}">{{ post.title }}</a></li>
-                               {% endfor %} </ul>
-</li>
-</ul>
-
-         <div class="site">
- 
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-              <<a href="https://github.com/mgtang/blog/new/gh-pages/_posts" target="_blank">写文章</a>><<a href="mailto:maigutang@gmail.com">Gmail</a>>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-<script type="text/javascript" src="http://mgtang.github.io/img/Code/jquery.min.js"></script>
-<script type="text/javascript" src="http://mgtang.github.io/img/Code/arrow6.js"></script>
-
+     
 <script type="text/javascript">
 <script>
 $(document).ready(function () {
@@ -122,6 +76,53 @@ $(document).ready(function () {
         });
     }); 
 </script>
+     </head>
+    
+   <body>
+           <!-- 导航栏 -->  
+<ul id="dock">
+<li id="links"><span>导航</span>
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>链接</li>
+<li><a href="http://keleyi.com/menu/cms/" >CMS</a></li><li><a href="http://keleyi.com/menu/net/" >.NET</a></li><li><a href="http://keleyi.com/menu/javascript/" >Javascript</a></li><li><a href="http://keleyi.com/menu/jquery/" >jQuery</a></li><li><a href="http://keleyi.com/menu/csharp/" >C#</a></li><li><a href="http://keleyi.com/menu/aspnet/" >ASP.NET</a></li><li><a href="http://keleyi.com/menu/mvc/" >MVC</a></li><li><a href="http://keleyi.com/menu/html5/" >HTML5</a></li>
+<li><a href="http://keleyi.com/menu/webqd/" >web前端</a></li><li><a href="http://keleyi.com/menu/sqlserver/" >SQL Server</a></li><li><a href="http://keleyi.com/menu/cpp/" >C++</a></li><li><a href="http://keleyi.com/menu/hbyy/" >汇编语言</a></li><li><a href="http://keleyi.com/menu/flhz/" >分类汇总</a></li><li><a href="http://keleyi.com/menu/other/" >其他</a></li><li><a href="http://keleyi.com/list/">最新文章</a></li><li><a href="http://keleyi.com/ziliao/js/zzbds.htm">JS正则表达式</a></li>
+</ul>
+</li>
+<li id="files"><span>链接</span>
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>游戏</li>
+<li><a href="http://keleyi.com/game/1/">HTML5捕鱼游戏</a></li>
+<li><a href="http://keleyi.com/game/2/">不上不下</a></li>
+<li><a href="http://keleyi.com/game/3/">打地鼠</a></li>
+<li><a href="http://keleyi.com/keleyi/phtml/silverlight/">猜数字</a></li>
+<li></li>
+</ul>
+</li>
+<li id="tools"><span>文章列表</span>
+<ul class="free">
+<li class="header"><a href="#" class="dock-keleyi-com">固定</a><a href="#" class="undock">隐藏</a>工具</li>
+                               {% for post in site.posts %}
+                               <li> <a href="{{ post.url }}">{{ post.title }}</a></li>
+                               {% endfor %} </ul>
+</li>
+</ul>
+
+         <div class="site">
+ 
+          {{ content }}
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+              <<a href="https://github.com/mgtang/blog/new/gh-pages/_posts" target="_blank">写文章</a>><<a href="mailto:maigutang@gmail.com">Gmail</a>>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+<script type="text/javascript" src="http://mgtang.github.io/img/Code/jquery.min.js"></script>
+<script type="text/javascript" src="http://mgtang.github.io/img/Code/arrow6.js"></script>
+
 
     </body>
 </html>
